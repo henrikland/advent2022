@@ -6,9 +6,11 @@ import (
 	"strings"
 )
 
-var Rock int = 1
-var Paper int = 2
-var Scissor int = 3
+const (
+	Rock = iota + 1
+	Paper
+	Scissor
+)
 
 type game struct {
 	opponent int
